@@ -1,0 +1,64 @@
+# This file exists so you can easily regenerate your project.
+#
+# `cookiepatcher` is a convenient shim around `cookiecutter`
+# for regenerating projects (it will generate a .cookiecutterrc
+# automatically for any template). To use it:
+#
+#    pip install cookiepatcher
+#    cookiepatcher gh:ionelmc/cookiecutter-pylibrary project-path
+#
+# See:
+#    https://pypi.org/project/cookiepatcher
+#
+# Alternatively, you can run:
+#
+#    cookiecutter --overwrite-if-exists --config-file=project-path/.cookiecutterrc gh:ionelmc/cookiecutter-pylibrary
+
+default_context:
+
+    _extensions:               [u'jinja2_time.TimeExtension']
+    _template:                 'gh:ionelmc/cookiecutter-pylibrary'
+    appveyor:                  'yes'
+    c_extension_function:      'longest'
+    c_extension_module:        '_zeebe_async'
+    c_extension_optional:      'no'
+    c_extension_support:       'no'
+    c_extension_test_pypi:     'no'
+    c_extension_test_pypi_appveyor_secret: '[Get encrypted password from https://ci.appveyor.com/account/bkc/tools/encrypt]'
+    c_extension_test_pypi_travis_secret: '# The password should be set in https://travis-ci.org/bkc/python-zeebe_async/settings\n    # Alternatively you can run this shell oneliner if you got travis gem installed:\n    #\n    #   echo -n "Password:"; (read -s p; echo -n TWINE_PASSWORD=$p) | travis encrypt --add=env.global --repo=bkc/python-zeebe_async'
+    c_extension_test_pypi_username: 'bkc'
+    codacy:                    'no'
+    codacy_projectid:          '[Get ID from https://app.codacy.com/app/bkc/python-zeebe_async/settings]'
+    codeclimate:               'no'
+    codecov:                   'yes'
+    command_line_interface:    'no'
+    command_line_interface_bin_name: 'zeebe_async'
+    coveralls:                 'no'
+    coveralls_token:           '[Required for Appveyor, take it from https://coveralls.io/github/bkc/python-zeebe_async]'
+    distribution_name:         'zeebe_async'
+    email:                     'bkc@murkworks.com'
+    full_name:                 'Brad Clements'
+    landscape:                 'no'
+    license:                   'Apache Software License 2.0'
+    linter:                    'flake8'
+    package_name:              'zeebe_async'
+    project_name:              'zeebe_async'
+    project_short_description: 'Async Zeebe Client'
+    release_date:              'today'
+    repo_hosting:              'github'
+    repo_name:                 'python-zeebe_async'
+    repo_username:             'bkc'
+    requiresio:                'yes'
+    scrutinizer:               'no'
+    sphinx_docs:               'yes'
+    sphinx_doctest:            'no'
+    sphinx_theme:              'sphinx-rtd-theme'
+    test_matrix_configurator:  'no'
+    test_matrix_separate_coverage: 'no'
+    test_runner:               'pytest'
+    test_runner_used_for_setuppy_test: 'no'
+    travis:                    'yes'
+    version:                   '0.0.1'
+    website:                   'https://igy.cx'
+    year_from:                 '2019'
+    year_to:                   '2019'
